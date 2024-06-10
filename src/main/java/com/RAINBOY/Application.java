@@ -21,13 +21,14 @@ public class Application
 		ServiceImpl service = context.getBean (ServiceImpl.class);
 
 		InternationalClientPOJO client=new InternationalClientPOJO (3,25,"Marcelo","Brazil");
-		service.getDetailsByObject (client).forEach ((cl)-> System.out.println (cl));
+		service.getDetailsByObject (client).forEach (System.out::println);
+        System.out.println ("GitUpdate");
 
 //		Iterable<InternationalClientPOJO> list = service.fetchMultipleDetails (true, "NAME", "COUNTRY");
 //		list.forEach ((c)-> System.out.println (c.getNAME ()+"=> "+c.getCOUNTRY ()));
-
-//		System.out.println (service.removeVaccineById (6l));
-
+//
+//		System.out.println (service.removeVaccineById (6L));
+//
 //		Long ID=6L;
 //		Optional<InternationalClientPOJO> optional = service.getVaccineById (ID);
 //
@@ -35,9 +36,9 @@ public class Application
 //			System.out.println(optional.get ());
 //		else
 //			optional.orElseThrow (()->new IllegalArgumentException ("NOT FOUND LMAOO"));
-
-
-
+//
+//
+//
 //	 	List<InternationalClientPOJO>list=new ArrayList<> ();
 //		list.add (new InternationalClientPOJO(3,25,"Marcelo","Brazil"));
 //		list.add (new InternationalClientPOJO(4,23,"Bianca","Spain"));
@@ -46,7 +47,7 @@ public class Application
 //
 //		String ss=""+service.registerMultipleCustomers (list);
 //		System.out.println (ss);
-
+//
 //		InternationalClientPOJO pojo = new InternationalClientPOJO ();
 //		pojo.setID (2);
 //		pojo.setAGE (30);
