@@ -23,8 +23,6 @@ public class Application
 		InternationalClientPOJO client=new InternationalClientPOJO (3,25,"Marcelo","Brazil");
 		service.getDetailsByObject (client).forEach (System.out::println);
 
-		System.out.println ("gitUpdate");
-
 //		Iterable<InternationalClientPOJO> list = service.fetchMultipleDetails (true, "NAME", "COUNTRY");
 //		list.forEach ((c)-> System.out.println (c.getNAME ()+"=> "+c.getCOUNTRY ()));
 //
