@@ -10,7 +10,7 @@ public interface ServiceInterface
 {
     String registerCustomer(InternationalClientPOJO pojo);
 
-    Iterable registerMultipleCustomers(Iterable<InternationalClientPOJO> list);
+    Iterable<InternationalClientPOJO> registerMultipleCustomers(Iterable<InternationalClientPOJO> list);
 
     Optional<InternationalClientPOJO>getVaccineById(Long ID);
 

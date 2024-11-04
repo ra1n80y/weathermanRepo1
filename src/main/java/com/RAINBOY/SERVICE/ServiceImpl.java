@@ -23,11 +23,11 @@ public class ServiceImpl implements ServiceInterface
     {
         //This right here is where the binding happens, probably(I'm still learning Spring lol)
         InternationalClientPOJO msg = repo.save (pojo);
-        return "Data Saved for user: "+msg.getID ();
+        return "Data Saved for user: "+msg.getNAME ()+" from: "+msg.getCOUNTRY ();
     }
 
     @Override
-    public Iterable registerMultipleCustomers(Iterable<InternationalClientPOJO> list)
+    public Iterable<InternationalClientPOJO> registerMultipleCustomers(Iterable<InternationalClientPOJO> list)
     {
         return repo.saveAll (list);
     }

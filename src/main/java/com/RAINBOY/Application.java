@@ -20,43 +20,49 @@ public class Application
 
 		ServiceImpl service = context.getBean (ServiceImpl.class);
 
-		InternationalClientPOJO client=new InternationalClientPOJO ();
-		service.getDetailsByObject (client).forEach (System.out::println);
+//		InternationalClientPOJO client=new InternationalClientPOJO (4,23,"Bianca","Spain");
+//		service.getDetailsByObject (client).forEach (System.out::println);
 
-		System.out.println ("gitUpdate");
+
 
 //	    Iterable<InternationalClientPOJO> list = service.fetchMultipleDetails (true, "NAME", "COUNTRY");
 //		list.forEach ((c)-> System.out.println (c.getNAME ()+"=> "+c.getCOUNTRY ()));
-//
-//		System.out.println (service.removeVaccineById (6L));
-//
+
+
+
 //		Long ID=6L;
+//		System.out.println (service.removeVaccineById (6L));
+
+
+
 //		Optional<InternationalClientPOJO> optional = service.getVaccineById (ID);
-//
-//		if(optional.isPresent ())
+//      if(optional.isPresent ())
 //			System.out.println(optional.get ());
 //		else
 //			optional.orElseThrow (()->new IllegalArgumentException ("NOT FOUND LMAOO"));
-//
-//
-//
+
+
+
 //	 	List<InternationalClientPOJO>list=new ArrayList<> ();
 //		list.add (new InternationalClientPOJO(3,25,"Marcelo","Brazil"));
 //		list.add (new InternationalClientPOJO(4,23,"Bianca","Spain"));
 //		list.add (new InternationalClientPOJO(5,27,"Hakeem","Nigeria"));
 //		list.add (new InternationalClientPOJO(6,34,"Janelle","USA"));
-//
 //		String ss=""+service.registerMultipleCustomers (list);
 //		System.out.println (ss);
-//
+
+
+
 //		InternationalClientPOJO pojo = new InternationalClientPOJO ();
-//		pojo.setID (2);
-//		pojo.setAGE (30);
-//		pojo.setNAME ("Natalia");
-//		pojo.setCOUNTRY ("United Kingdom");
+//		pojo.setID (6);
+//		pojo.setAGE (5565);
+//		pojo.setNAME ("KHADJI");
+//		pojo.setCOUNTRY ("KORYA");
 //
-//		String message = service.registerCustomer (pojo);
+//		String message = service.registerCustomer ();
 //		System.out.println (message);
+
 		context.close ();
+
 	}
 }

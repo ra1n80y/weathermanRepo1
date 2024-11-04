@@ -6,9 +6,11 @@ import lombok.*;
 
 @Data
 @Entity
+@NoArgsConstructor//Zero-param const. is req to map POJO to DB
 @Table(name = "GlobalClientData")//For table creation only, updates don't need it
 public class InternationalClientPOJO
 {
+
     @Id
     @Column(name = "ID")//For table creation only, updates don't need it
     private int ID;
