@@ -20,7 +20,7 @@ public class Application
 
 		ServiceImpl service = context.getBean (ServiceImpl.class);
 
-		InternationalClientPOJO client=new InternationalClientPOJO (3,25,"Marcelo","Brazil");
+		InternationalClientPOJO client=new InternationalClientPOJO ();
 		service.getDetailsByObject (client).forEach (System.out::println);
 
 		System.out.println ("gitUpdate");

@@ -3,11 +3,8 @@ package com.RAINBOY.BO;
 import jakarta.persistence.*;
 import lombok.*;
 
-@Setter
-@Getter
-@ToString
-@AllArgsConstructor
-@NoArgsConstructor
+
+@Data
 @Entity
 @Table(name = "GlobalClientData")//For table creation only, updates don't need it
 public class InternationalClientPOJO
